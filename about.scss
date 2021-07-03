@@ -1,0 +1,18 @@
+$theme-color:#4CAF50;
+@import 'home.scss';
+@import 'topnav.scss';
+@import 'myfooter.scss';
+
+.main{
+    @extend .container;
+    .content{
+        margin: 5%;
+        opacity: 0.8;
+        border-radius: round($number: 50px);
+        background-color: black ;
+        padding: 10%;
+        font-size: x-large;
+        font-family: "Lato", sans-serif ;
+        color: $theme-color;
+        }
+    }

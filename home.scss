@@ -1,0 +1,39 @@
+
+@import 'sidenavbar.scss';
+@import 'topnav.scss';
+@import 'myfooter.scss';
+@mixin flexing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-content: space-evenly;
+}
+body{
+    background-image: url("Images/background.jpg");
+}
+
+.container{
+@include flexing();
+border: none;
+height: 80vh;
+    .Flex-item{
+        background-color: $theme-color;
+        border-radius: 10px;
+        height: 100px;
+        width: fit-content;   
+        padding: 20px;
+        font-size: 30px;
+        flex-grow: 1;
+        margin: 8%;
+        vertical-align: -webkit-baseline-middle;
+        :hover{
+            flex-grow: 1.8;
+            opacity: 1.2;
+            cursor: auto;
+            font-size: 40px;
+            height: 120px;
+            width: auto;
+        }
+    }
+}
